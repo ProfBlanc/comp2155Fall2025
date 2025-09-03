@@ -1,0 +1,14 @@
+creating a class
+Grade
+    percentage: 0-100 (getter & setter annotation)
+
+PassingGrade
+    based on Grade
+        define the relation between Grade & Passing Grade
+
+Your turn
+create a class named Student
+    name, age: 18-65
+
+MatureStudent
+    age min requirement of 30+

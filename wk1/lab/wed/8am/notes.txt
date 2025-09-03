@@ -1,0 +1,12 @@
+Student class
+    name: string
+    age: int
+    grade: Grade
+
+Grade class
+    letter: string
+    percentage: int
+
+MatureStudent class
+    based on Student
+    enforce age must be 30+
