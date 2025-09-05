@@ -1,0 +1,9 @@
+Version 1
+Ask the user for a grade.
+Determine if grade is valid?
+    0-100 as whole num (int)
+
+*NOT using classes
+
+Version 2
+    class version
