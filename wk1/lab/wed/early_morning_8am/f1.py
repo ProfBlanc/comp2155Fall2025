@@ -32,4 +32,4 @@ class PassingGrade(Grade):
 my_grade = Grade(100)
 print(my_grade.percentage)
 
-pg = PassingGrade(40)
+#pg = PassingGrade(40)

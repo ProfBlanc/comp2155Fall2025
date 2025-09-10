@@ -1,0 +1,25 @@
+Create a class named
+Evaluation
+    name:           str
+    grade:          Grade
+    _____________________
+    tostring method: summarize the Evaluation
+    save method: write to FS
+                name_of_evaluation.txt
+                    tostring summary content
+
+Bonu:s
+Course
+    code:           str
+    term:           str
+    semester:       str
+    evaluations:    list[Evaluation]
+    ________________
+    add_evaluation(eval): add 1 evaluation to list of evaluations
+    save(): create the following directory structure
+                year/semester/course_code
+            inside course_code dir
+                files
+                    evaluation_name.txt
+            inside file_evaluation .txt files
+                toString summary of each Evaluation object

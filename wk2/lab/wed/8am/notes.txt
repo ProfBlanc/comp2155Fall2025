@@ -1,0 +1,17 @@
+Evaluation
+    name:   str
+    grade:  Grade
+
+Course
+    code:       str
+    semester:   str
+    year:       int
+    evaluations: list<Evaluation>
+    methods
+    add_evaluation: adds an Evaluation to list of evaluations
+    save_course: create dirs and files with content
+                 dir: year/semester/course
+                 files inside of dir
+                        each evaluation
+                            content of each evaluation:
+                                grade percentage
