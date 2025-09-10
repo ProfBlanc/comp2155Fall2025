@@ -8,7 +8,7 @@ Evaluation
                 name_of_evaluation.txt
                     tostring summary content
 
-Bonu:s
+Bonus:
 Course
     code:           str
     term:           str

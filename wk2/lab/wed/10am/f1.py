@@ -30,3 +30,9 @@ class Evaluation:
 midterm = Evaluation(name="MidtermExam", grade=Grade(90))
 print(midterm)
 midterm.save()
+
+e_name = input("Enter evaluation name: ")
+e_grade = int(input("Enter evaluation grade: "))
+
+e = Evaluation(name=e_name, grade=Grade(e_grade))
+print(e)
