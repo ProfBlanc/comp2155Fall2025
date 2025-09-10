@@ -36,3 +36,4 @@ e_grade = int(input("Enter evaluation grade: "))
 
 e = Evaluation(name=e_name, grade=Grade(e_grade))
 print(e)
+e.save()
