@@ -1,0 +1,21 @@
+A superhero is basically a person with extra capabilities
+
+if a person has
+    name
+    job
+superhero
+    hero_name
+    super_power
+
+When you create a class BASED on another class
+
+
+OLD                     NEW
+
+original class          newly created class
+super class             subclass
+base class              derived class
+parent class            child class
+
+
+
