@@ -1,0 +1,14 @@
+inheritance
+    creating a class BASED on another
+
+    old class           new class
+    parent              child
+    super               sub
+    base                derived
+
+
+    no entities (attributes, actions) can be removed from the new class
+    actions can be overridden
+        why? to update its behaviour to be more specific, to reflect newer class attributes
+
+another reason to use inheritance is to GROUP similar entities together
