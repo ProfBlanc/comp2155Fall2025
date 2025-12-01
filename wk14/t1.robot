@@ -1,19 +1,20 @@
 *** Settings ***
-Library    NetmikoLibrary
+Library    CustomConnectHandler.py
 
 *** Variables ***
 ${DEVICE}       192.168.198.128
 ${USER}         ${EMPTY}
 ${PASS}         ${EMPTY}
-${DEVICE_TYPE}  cisco_ios_telnet
-${PORT}         30009
 ${SECRET}       cisco1
+${PORT}		30009
+@{COMMANDS}   show version    show ip int brief
 
 *** Test Cases ***
 Test Connection
-    Open Connection    ${DEVICE}    ${USER}    ${PASS}    ${DEVICE_TYPE}    ${PORT}    ${SECRET}
+    ${output}=    Connect And Run Command    ${DEVICE}    ${USER}    ${PASS}    ${SECRET}    ${PORT}    show version
 
-    ${output}=    Execute Command    show version
+    FOR    ${cmd}    IN    @{COMMANDS}
+            Log    Connect And Run Command    ${DEVICE}    ${USER}    ${PASS}    ${SECRET}    ${PORT}   ${cmd}
+    END
+
     Log    ${output}
-
-    Close Connection
